@@ -5,6 +5,11 @@ import GetShelterDetailsUseCase from './usecases/get.shelter.details.usecase';
 
 @Module({
   controllers: [ShelterController],
+  
+  impoprts: [
+    MongooseModule.forFeature([{name: Shelter.name, schema: ShelterSchema}])
+  ]
+
   providers: [
     {
       provide: ShelterTokens.getShelterDetailsUseCase,
