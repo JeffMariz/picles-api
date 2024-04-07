@@ -6,18 +6,18 @@ export type ShelterDocument = HydratedDocument<Shelter>
 @Schema({versionKey: false})
 
 export class Shelter{
-    @prop({ required: true})
+    @Prop({ required: true})
     name: string
-    @prop({ required: true})
+    @Prop({ required: true})
     whatsApp: string
-    @prop({ required: true})
+    @Prop({ required: true})
     email: string
-    @prop({ required: true})
+    @Prop({ required: true})
     phone: string
-    @prop({ required: true})
+    @Prop({ required: true})
     creatAt: Date
-    @prop({ required: true})
+    @Prop({ required: true})
     updateAt: Date
 }
 
-export const ShelterShema = SchemaFactory.creatForClass(Shelter)
+export const ShelterShema = SchemaFactory.createForClass(Shelter)

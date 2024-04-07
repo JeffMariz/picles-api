@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 export default class GetShelterDetailsUseCaseOutput {
     shelterName: string
     shelterWhatsApp: string
@@ -8,7 +7,7 @@ export default class GetShelterDetailsUseCaseOutput {
     updatedAt: Date
 
     constructor(data: Partial<GetShelterDetailsUseCaseOutput>){
-        Object.assign(this, data)
+        Object.assign(this, data);
     }
 }
 
