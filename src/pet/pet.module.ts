@@ -6,6 +6,7 @@ import PetRepository from './pet.repository';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Pet, PetSchema } from './schemas/pet.schema';
 import GetPetByTdUseCase from './usecase/get.pet.by.id.usecase';
+import UpdatePetByIdUseCase from './usecase/update.pet.by.id.usecase';
 
 @Module({
   controllers: [PetController],
@@ -18,6 +19,10 @@ import GetPetByTdUseCase from './usecase/get.pet.by.id.usecase';
     {
       provide: PetTokens.petRepository,
       useClass: PetRepository
+    },
+    {
+      provide: PetTokens.updatePetByIdUseCase,
+      useClass: UpdatePetByIdUseCase 
     },
     {
       provide: PetTokens.getPetByIdUseCase,
