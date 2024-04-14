@@ -6,7 +6,7 @@ export default class GetPetsUseCaseOutput{
     itensPerPage: number;
 
     constructor(data: Partial<GetPetsUseCaseOutput>)
-{
+  {
     Object.assign(this, data)
-}
+   }
 }

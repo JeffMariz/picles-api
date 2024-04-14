@@ -1,8 +1,9 @@
-export default class PetTokens{
-    static createPetUseCase = 'createPetUseCase';
-    static petRepository = 'petRepository';
-    static getPetByIdUseCase = 'getPetByIdUseCase';
-    static updatePetByIdUseCase = 'updatePetByIdUseCase';
-    static deletePetByIdUseCase = 'deletePetByIdUseCase';
-    static updatePetPhotoByIdUseCase = 'updatePetPhotoByIdUseCase';
+export default class PetTokens {
+    static readonly createPetUseCase = 'createPetUseCase';
+    static readonly petRepository = 'petRepository';
+    static readonly getPetByIdUseCase = 'getPetByIdUseCase';
+    static readonly updatePetByIdUseCase = 'updatePetByIdUseCase';
+    static readonly updatePhotoPetByIdUseCase = 'updatePhotoPetByIdUseCase';
+    static readonly deletePetByIdUseCase = 'deletePetByIdUseCase';
+    static readonly getPetsUseCase = 'getPetsUseCase';
 }
